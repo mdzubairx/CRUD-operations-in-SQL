@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Form</title>
+</head>
+<body>
+    <h3>You have entered in the user <%= users.username %> </h3>
+    <form method="post" action="/user/<%= users.id %>?_method=PATCH">
+        <textarea name="username" id="" cols="10" rows="1"><%= users.username %></textarea>
+        <br>
+        <input type="password" placeholder="password" name="password">
+        <br>
+        <br>
+        <button>Final submitt</button>
+    </form>
+</body>
+</html>
